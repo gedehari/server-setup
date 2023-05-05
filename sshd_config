@@ -1,0 +1,11 @@
+Include /etc/ssh/sshd_config.d/*.conf
+Port 53028
+PermitRootLogin yes
+PasswordAuthentication no
+ChallengeResponseAuthentication no
+UsePAM yes
+X11Forwarding no
+PrintMotd no
+AcceptEnv LANG LC_*
+Subsystem       sftp    /usr/lib/openssh/sftp-server
+ClientAliveInterval 120
